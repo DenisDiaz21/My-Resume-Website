@@ -1,0 +1,161 @@
+/* Add CSS styling here */
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+
+vertical-align: baseline;  
+}
+
+* {
+    font-family: Raleway;
+}
+
+
+nav {
+    display:flex;
+    flex-direction: row;
+}
+    nav a {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+nav a:hover {
+    background-color:red;
+}
+header {
+    background-color: black;
+    width: 100%
+}
+.headerName {
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.firstRow {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.secondRow {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+h1 {
+    font-size:35px;
+    color: whitesmoke;
+    margin-top: 5em;
+    margin-left: 1em;
+}
+h2 {
+    font-size: 25px;
+    margin: 0 auto;
+}
+h3 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0em 1em 0em;
+}
+footer {
+    padding-top: 15px;
+    background-color: black;
+    padding-bottom: 30px;
+    
+}
+.captions {
+    margin: 1em 1em 1em 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.bigImage {
+    border-style: groove;
+    border-color: whitesmoke;
+    border-width: 10px;
+    border-radius: 3px;
+    margin: 100px 0px 100px;
+}
+
+
+.imageRows {
+    background-color:grey;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+
+.contactMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonStyling {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+}
+.topContainer {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.topContainer :nth-child(1) {
+    margin: auto auto;
+}
+.topContainer :nth-child(2){
+    margin: auto auto;
+    
+}
+
+
+.imageRows p {
+    text-align: center;
+    margin-bottom: 1em;
+}
+.topContainer h2 {
+    text-align: center;
+}
+.topContainer p {
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+     nav { 
+     flex-direction: column;
+    }
+
+    nav a {
+        justify-content: center;
+    }
+    .topContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
