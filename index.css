@@ -24,16 +24,18 @@ vertical-align: baseline;
     font-family: Raleway;
 }
 
-
+/*Nav Bar*/
+#navbar {
+    background-color: grey;
+    overflow: hidden;
+}
 nav {
     display:flex;
     flex-direction: row;
 }
-    nav a {
-    display: flex;
-    flex-direction: row;
+ nav a {
     color: white;
-    padding: 14px 16px;
+    padding: 1em 1.1em;
     text-decoration: none;
   }
 nav a:hover {
@@ -41,33 +43,30 @@ nav a:hover {
 }
 header {
     background-color: black;
-    width: 100%
+    width: 100%;
 }
 .headerName {
     display:flex;
     justify-content: space-evenly;
     flex-direction: row;
 }
-.firstRow {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 60px;
 }
-.secondRow {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
+/*End of Nav Bar*/
 
 h1 {
     font-size:35px;
     color: whitesmoke;
-    margin-top: 5em;
-    margin-left: 1em;
+    margin-top: 3em;
+    
 }
 h2 {
     font-size: 25px;
-    margin: 0 auto;
+
 }
 h3 {
     color: white;
@@ -75,38 +74,85 @@ h3 {
     justify-content: center;
     margin: 1em 0em 1em 0em;
 }
-footer {
-    padding-top: 15px;
-    background-color: black;
-    padding-bottom: 30px;
-    
+
+/*Body*/
+
+
+.topContainer {
+    margin: 2em 0em 2em 0em;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
 }
-.captions {
-    margin: 1em 1em 1em 1em;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+.topContainer :nth-child(1) {
+    margin: 0 auto;
 }
+.topContainer :nth-child(2){
+    margin: 0 auto;
+}
+
 .bigImage {
-    border-style: groove;
-    border-color: whitesmoke;
-    border-width: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
     border-radius: 3px;
-    margin: 100px 0px 100px;
 }
 
+.buttonStyling {
+    background-color: #f44336;
+    border-color: black;
+    border-width: 3px;
+    color: white;
+    padding: 1em 2em;
+}
+.bottomContainerTitle {
+    text-align: center;
+}
 
-.imageRows {
-    background-color:grey;
+.bottomContainerTopImgs {
+    background-color: black;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
 
 
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 2em;
+    padding-bottom: 5em;
+    
+}
+
+.bottomContainerTopImgs p {
+    text-align: center;
+    margin-bottom: 1em;
+    color: whitesmoke;
+}
+.bottomContainerBottomImgs {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+    padding-top: 2em;
+    padding-bottom: 5em;
+    
+}
+.bottomContainerBottomImgs p {
+    text-align: center;
+    margin-bottom: 1em;
+    color: whitesmoke;
+}
+/*End of body*/
+
+/*footer*/
+footer {
+    padding-top: 15px;
+    background-color: darkgray;
+    padding-bottom: 30px;
     
 }
 
@@ -115,37 +161,9 @@ footer {
     justify-content: center;
     align-items: center;
 }
-.buttonStyling {
-    background-color: #f44336;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-}
-.topContainer {
-    display:flex;
-    flex-direction:row;
-    justify-content: center;
-}
-.topContainer :nth-child(1) {
-    margin: auto auto;
-}
-.topContainer :nth-child(2){
-    margin: auto auto;
-    
-}
 
 
-.imageRows p {
-    text-align: center;
-    margin-bottom: 1em;
-}
-.topContainer h2 {
-    text-align: center;
-}
-.topContainer p {
-    text-align: center;
-}
-
+/*Media Queries*/
 @media screen and (max-width: 800px) {
      nav { 
      flex-direction: column;
