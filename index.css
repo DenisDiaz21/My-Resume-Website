@@ -54,7 +54,6 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    padding-top: 60px;
 }
 /*End of Nav Bar*/
 
@@ -136,7 +135,7 @@ h3 {
     flex-direction: row;
     flex-wrap: wrap;
 
-
+    
     padding-top: 2em;
     padding-bottom: 5em;
     
@@ -145,6 +144,9 @@ h3 {
     text-align: center;
     margin-bottom: 1em;
     color: whitesmoke;
+}
+.bottomContainerBottomImgs :nth-child(1){
+    border: 2px dotted white;
 }
 /*End of body*/
 
