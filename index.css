@@ -21,49 +21,127 @@ vertical-align: baseline;
 }
 
 * {
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
     font-family: Raleway;
 }
 
-/*Nav Bar*/
-#navbar {
-    background-color: grey;
-    overflow: hidden;
+body {
+    background: #fff;
+    min-height: 200vh;
+
 }
-nav {
-    display:flex;
-    flex-direction: row;
-}
- nav a {
-    color: white;
-    padding: 1em 1.1em;
-    text-decoration: none;
-  }
-nav a:hover {
-    background-color:red;
-}
+
+/* NAV BAR */
+
 header {
-    background-color: black;
-    width: 100%;
-}
-.headerName {
-    display:flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
-.sticky {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    opacity: 0.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+ 
 }
+
+header.sticky {
+    padding: 5px 100px;
+    background: #000;
+}
+
+header.sticky .headerTitle {
+    color: #fff;
+}
+header.sticky ul li a {
+    color: #fff;
+}
+header .headerTitle {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+.topBanner {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color: darkgray;
+    border: 5px solid black;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+header ul li a:hover {
+    color: black;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+header.sticky ul li a:hover {
+    color: darkgray;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
 /*End of Nav Bar*/
+
+.childBanner1 {
+    border: 5px solid green;
+}
+
+.childBanner2 {
+    border: 5px solid salmon;
+}
+
+
+
 
 h1 {
     font-size:35px;
     color: whitesmoke;
-    margin-top: 3em;
     
 }
+
 h2 {
     font-size: 25px;
 
@@ -139,18 +217,29 @@ h3 {
     border-bottom: 2px dashed white;
     margin-right: 1em;
     position: relative;
-    background-color: green;
+    
 }
 /* Overlay Transition from Left */
 .child {
-    position: relative;
-    border: 5px solid slateblue;
+   
+  
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
 }
+
 .image {
     display: block;
  
     height: auto;
   }
+
+.square1 {
+    position: relative;
+    border: 5px solid black;
+}
 
 .overlay1 {
     position: absolute;
@@ -163,7 +252,7 @@ h3 {
     height: 100%;
     transition: .5s ease;
 }
-.child:hover .overlay1 {
+.square1:hover .overlay1 {
     width:100%;
 }
 .overlaytext1 {
@@ -183,7 +272,31 @@ h3 {
 .bCTIR2 {
     border-bottom: 2px dashed white;
     margin-left: 1em;
+
 }
+
+/*Overlay Transition from Right*/
+
+.square2 {
+    position: relative;
+
+}
+.overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.square2:hover .overlay2 {
+    width: 100%;
+    left: 0;
+}
+
 
 .bottomContainerBottomImgRow {
     background-color: black;
@@ -239,19 +352,19 @@ footer {
 /*Media Queries*/
 @media screen and (max-width: 800px) 
 {   
-    .headerName {
+    /* .headerName {
         text-align: center;
-    }
+    } */
 
     /* gets rid of phone navbar but looks janky
        go back and revise*/
-    .sticky {
+    /* .sticky {
         display: none;
     }
      nav { 
      flex-direction: column;
      text-align: center;
-    }
+    } */
     .topContainer {
         flex-direction: column;
         align-items: center;
