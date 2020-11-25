@@ -51,7 +51,7 @@ header {
 
 header.sticky {
     padding: 5px 100px;
-    background: #000;
+    background: #08B2E3;
 }
 
 header.sticky .headerTitle {
@@ -63,7 +63,7 @@ header.sticky ul li a {
 header .headerTitle {
     position: relative;
     font-weight: 700;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
@@ -87,7 +87,7 @@ header ul li a {
     position: relative;
     margin: 0 15px;
     text-decoration: none;
-    color: #fff;
+    color: #000;
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.6s;
@@ -97,18 +97,18 @@ header ul li a {
     position: relative;
     width: 100%;
     height: 80vh;
-    background-color: darkgray;
-    border: 5px solid black;
+    background-color: #EFE9F4;
+    
 
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-end;
 
 }
 header ul li a:hover {
-    color: black;
+    color: #fff;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
@@ -116,7 +116,7 @@ header ul li a:hover {
 }
 
 header.sticky ul li a:hover {
-    color: darkgray;
+    color: #000;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
@@ -127,6 +127,13 @@ header.sticky ul li a:hover {
 
 .childBanner1 {
     border: 5px solid green;
+    align-self: center;
+
+}
+.childBanner1 p {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.8em;
+    font-weight: 500;
 }
 
 .childBanner2 {
@@ -136,11 +143,6 @@ header.sticky ul li a:hover {
 
 
 
-h1 {
-    font-size:35px;
-    color: whitesmoke;
-    
-}
 
 h2 {
     font-size: 25px;
@@ -153,51 +155,39 @@ h3 {
     margin: 1em 0em 1em 0em;
 }
 
-/*Body*/
+
+.mainContainer {
+    padding-top: 6.5em;
+    background-color: #fff;
+}
 
 
-.topContainer {
-    margin: 2em 0em 2em 0em;
-    display:flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items: center;
-    
-}
-.topContainer :nth-child(1) {
-    margin: 0 auto;
-}
-.topContainer :nth-child(2){
-    margin: 0 auto;
+.projectsWord {
+    font-weight: 100;
+    font-style: italic;
 }
 
-.bigImage {
-    border-style: solid;
-    border-color: black;
-    border-width: 3px;
-    border-radius: 3px;
-}
 
-.buttonStyling {
-    background-color: #f44336;
-    border-color: black;
-    border-width: 3px;
-    color: white;
-    padding: 1em 2em;
-}
+
+
 .bottomContainer {
+    background-color: #EE6352;
     display:flex;
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
 }
 .bottomContainerTitle {
+    margin: 0 auto;
+    width:50%;
     text-align: center;
-    border: 5px solid tan;
+    border-top: 3px solid black;
+    padding-top: 2.5em;
+    padding-bottom: 3em;
+    line-height: 2em;
 }
 
 .bottomContainerTopImgRow {
-    background-color: black;
     display: flex;
 
     padding-top: 2em;
@@ -219,6 +209,10 @@ h3 {
     position: relative;
     
 }
+
+
+
+
 /* Overlay Transition from Left */
 .child {
    
@@ -246,7 +240,7 @@ h3 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background-color: #EE6352;
     overflow: hidden;
     width: 0;
     height: 100%;
@@ -279,14 +273,14 @@ h3 {
 
 .square2 {
     position: relative;
-
+    border: 5px solid black;
 }
 .overlay2 {
     position: absolute;
     bottom: 0;
     left: 100%;
     right: 0;
-    background-color: #008CBA;
+    background-color: #EE6352;
     overflow: hidden;
     width: 0;
     height: 100%;
@@ -299,7 +293,7 @@ h3 {
 
 
 .bottomContainerBottomImgRow {
-    background-color: black;
+    
     display: flex;
     
    
@@ -332,39 +326,54 @@ h3 {
 
 
 
-/*End of body*/
+
 
 /*footer*/
 footer {
     padding-top: 15px;
-    background-color: darkgray;
+    background-color:  #484D6D;
     padding-bottom: 30px;
     
 }
 
-.contactMe {
-    display: flex;
+footer h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: lighter;
+}
+
+footer a:nth-child(2) {
+    margin: 0 auto;
+    display:flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 1em;;
+
 }
+footer a:nth-child(2):hover {
+    color: #000;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+footer div {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+
+}
+
+
 
 
 /*Media Queries*/
 @media screen and (max-width: 800px) 
 {   
-    /* .headerName {
-        text-align: center;
-    } */
-
-    /* gets rid of phone navbar but looks janky
-       go back and revise*/
-    /* .sticky {
-        display: none;
-    }
-     nav { 
-     flex-direction: column;
-     text-align: center;
-    } */
     .topContainer {
         flex-direction: column;
         align-items: center;
