@@ -30,7 +30,7 @@ vertical-align: baseline;
 body {
     background: #fff;
     min-height: 200vh;
-
+    width: 100%;
 }
 
 /* NAV BAR */
