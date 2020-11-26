@@ -405,13 +405,16 @@ footer ul li a:visited {
 }
 
 /*Media Queries*/
-@media screen and (max-width: 800px) 
+@media screen and (max-width: 850px) 
 {   
-    .topContainer {
-        flex-direction: column;
-        align-items: center;
+
+    header {
+        width: 100%;
     }
 
+    header.sticky {
+        width: 100%;
+    }
     /*Go back and look at this to make it simpler*/
     .bottomContainerTopImgRow {
         justify-content: space-evenly;
