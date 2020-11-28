@@ -406,7 +406,7 @@ footer ul li a:visited {
 }
 
 /*Media Queries*/
-@media screen and (max-width: 900px) 
+@media only screen and (max-width: 900px) 
 {   
 
     header {
