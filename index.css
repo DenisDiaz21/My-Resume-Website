@@ -406,67 +406,22 @@ footer ul li a:visited {
 }
 
 /*Media Queries*/
-@media only screen and (max-width: 900px) 
+@media only screen and (max-width: 950px) 
 {   
 
     header {
         width: 50%;
     }
 
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        transition: 0.6s;
-        padding: 40px 100px;
-        z-index: 100000;
-     
-    }
-    
-    header.sticky {
-        padding: 5px 100px;
-        background: #08B2E3;
-        width:100%;
-        
-    }
-    
-    header.sticky .headerTitle {
-        color: #fff;
-    }
-    header.sticky ul li a {
-        color: #fff;
-    }
     header .headerTitle {
        right: 1em;
     }
     
-    header ul {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    header ul li{
-        position: relative;
-        list-style: none;
-    }
-    
-    header ul li a {
-        position: relative;
-        margin: 0 15px;
-        text-decoration: none;
-        color: #000;
-        letter-spacing: 2px;
-        font-weight: 500px;
-        transition: 0.6s;
-       
 
-    }
+    
+ 
+    
+  
     /*Go back and look at this to make it simpler*/
     .bottomContainerTopImgRow {
         justify-content: space-evenly;
