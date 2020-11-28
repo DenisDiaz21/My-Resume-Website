@@ -406,18 +406,17 @@ footer ul li a:visited {
 }
 
 /*Media Queries*/
-@media only screen and (max-width: 950px) 
+@media only screen and (max-width: 500px) 
 {   
 
-    header {
-        width: 50%;
-    }
-
+ 
     header .headerTitle {
-       right: 1em;
+       right: 2em;
     }
     
-
+    header ul li {
+        right: 2.3em;
+    }
     
  
     
