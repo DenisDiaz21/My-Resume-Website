@@ -419,7 +419,7 @@ footer ul li a:visited {
         left: 0;
         
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         transition: 0.6s;
         padding: 40px 100px;
@@ -441,14 +441,7 @@ footer ul li a:visited {
         color: #fff;
     }
     header .headerTitle {
-        position: relative;
-        font-weight: 700;
-        color: #000;
-        text-decoration: none;
-        font-size: 1.7em;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        transition: 0.6s;
+       right: 1em;
     }
     
     header ul {
