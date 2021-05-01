@@ -2,11 +2,11 @@
 let loader = document.querySelector(".loader-wrapper");
 
 console.log(loader);
-function ass() {
+function RemoveD() {
     setTimeout(() => {
     loader.parentElement.removeChild(loader);
 }, 4000);}
-ass();
+RemoveD();
 
 // Disable scroll
 function DisableScrolling () {
