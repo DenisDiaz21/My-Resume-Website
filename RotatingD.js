@@ -1,7 +1,7 @@
 // Loader Rotating D Cancel
 let loader = document.querySelector(".loader-wrapper");
 
-console.log(loader);
+
 function RemoveD() {
     setTimeout(() => {
     loader.parentElement.removeChild(loader);

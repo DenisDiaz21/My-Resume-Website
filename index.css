@@ -14,19 +14,19 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-border: 0;  
-font-size: 100%;  
+border: 0; 
 
 vertical-align: baseline;  
 }
 
 * {
-    margin: 0;  
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Bebas Neue', cursive;
 }
 
+body {
+  overflow-x: hidden;
+}
 
 /* NAV BAR */
 
@@ -41,12 +41,10 @@ header {
     transition: 0.6s;
     padding: 40px 100px;
     z-index: 98;
- 
 }
 
-header.sticky {
-    padding: 5px 100px;
-  
+ header.sticky {
+    padding: 10px 100px;
     background: rgba(1, 1, 93, 0.685);
 
 }
@@ -54,6 +52,7 @@ header.sticky {
 header.sticky .headerTitle {
     color: #fff;
     font-size: 2em;
+    
 }
 header.sticky ul li a {
     color: #fff;
@@ -116,48 +115,59 @@ header.sticky ul li a:hover {
     height: 100vh;
     background-color: #21D4FD;
    
-        
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     
 }
 
+.landingPage {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 60%;
+
+}
+
+
 
 
 .childBanner1 p {
-    font-family: 'Bebas Neue', cursive;
     font-size: 2.2em;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.774);
+    color: rgba(255, 255, 255, 0.822);
+    text-align: center;
+
+    display: flex;
+    align-self: flex-start;
+
 }
 
 .childBanner1 h1 {
-  font-family: "Orbitron", sans-serif;
+  font-family: Righteous;
   font-size: 5em;
   color: #000000;
+
+  display: flex;
+  align-self: flex-start;
 }
 
 .childBanner1Nested p {
- 
-    font-size: 1.4em;
+ font-size: 1.7em;
+ display: flex;
+ align-self: flex-start;
+ text-align:left;
 }
 
 
 .childBanner2 img {
-
-  
-  max-width: 300px;
-
+  max-width: 100%;
   z-index: 10;
-
 }
-.Samus {
-  background-image: "./blob (1).svg";
-}
-
-
 
 /* Mid Area */
 .mid {
@@ -237,5 +247,85 @@ header.sticky ul li a:hover {
    }
  }
 
+ /* Arrow Pointing Down */
+
+ .arrow { 
+  transform: translate(-50%,-50%);
+  position: absolute;
+  bottom: 1.1em;
+  visibility: hidden;
+}
+.arrow span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  transform: rotate(45deg);
+  margin: -8px;
+  animation: arrowDown 2s infinite;
+}
+.arrow span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+  animation-delay: -0.4s;
+}
+@keyframes arrowDown {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}
+
 
 /* Media Queries  */
+
+ /* Modern iPhone: Portrait*/
+ @media only screen 
+ and (min-device-width: 375px) 
+ and (max-device-width: 812px) 
+ and (-webkit-min-device-pixel-ratio: 3)
+ and (orientation: portrait) {
+
+  html,body
+  {
+      overflow-x: hidden; 
+  }
+
+  header.headerTitle {
+      /* position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.6s;
+      padding: 40px 100px;
+      z-index: 98; */
+    flex-grow: 80;
+    
+  }
+
+  .topBanner {
+    height: 170vh;
+  }
+
+  .landingPage {
+
+    flex-direction: column;
+   
+    height: 100vh;
+
+  }
+
+}
+
