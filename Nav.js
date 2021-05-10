@@ -6,6 +6,7 @@ window.addEventListener("scroll", () =>
 {
    header.classList.toggle("sticky", window.scrollY > 0);  
 
+   // Navbar hide after scrolling down 900px
    prevScrollPos = window.pageYOffset;
    
    if(window.scrollY > 900)
@@ -19,7 +20,7 @@ window.addEventListener("scroll", () =>
          header.style.top = '-100px';
          header.style.transition = '.6s';
       }
-      prevScrollPos = currentScrollPos 
+      prevScrollPos = currentScrollPos;
    }
    else if (window.scrollY < 900)
    {
