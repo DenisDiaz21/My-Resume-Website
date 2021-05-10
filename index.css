@@ -379,5 +379,8 @@ footer {
       flex-flow: row wrap;
       max-width: 60%;
   }
+  .aboutMeImg {
+    margin: 25px 35px;
+  }
 }
 
