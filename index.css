@@ -355,22 +355,6 @@ footer {
   {
       overflow-x: hidden; 
   }
-
-  header.headerTitle {
-      /* position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      transition: 0.6s;
-      padding: 40px 100px;
-      z-index: 98; */
-    flex-grow: 80;
-    
-  }
-
   .topBanner {
     height: 150vh;
   }
@@ -384,5 +368,16 @@ footer {
 
   }
 
+  .aboutMe {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .aboutMeSection {
+      display: flex;
+      flex-flow: row wrap;
+      max-width: 60%;
+  }
 }
 
