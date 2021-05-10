@@ -108,30 +108,11 @@ header.sticky ul li a:hover {
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 }
-
-/* Header Animation up */
-header.goAway {
-  animation: goUp 2s;
-}
-
-@keyframes goUp {
-  from {
-    height: auto;
-  }
-  to {
-    transform: translate(0, -100px)
-  }
-}
-
-header.comeBack {
-  animation: comeBack 2s;
-}
-
-
 /*End of Nav Bar*/
 
+/* Main Body */
 .topBanner {
-    height: 100vh;
+    height: 90vh;
     background-color: #21D4FD;
    
     display: flex;
@@ -191,9 +172,65 @@ header.comeBack {
 /* Mid Area */
 .mid {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutMe h2 {
+  font-family: Righteous;
+  font-size: 5em;
+  color: #000000;
+  align-self: center;
+}
+.aboutMeSection{
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 60%;
+}
+.aboutMeBio {
+  display: flex;
+}
+.aboutMeImg {
+  display: inline-block;
+  position: relative;
+
+  margin: 0px 35px;
+  width: 300px;
+  height: 520px;
+  background:#fff;
+  border: solid black;
+  border-color: black; 
+  border-width: 5px 3px 3px 5px;
+  border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+
+  overflow: hidden;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects h2 {
+  font-family: Righteous;
+  font-size: 5em;
+  color: #000000;
+  align-self: center;
+}
+.projectsSection{
+  min-height: 100vh;
 }
 
-
+/* End of Main Body */
+/* Footer */
+footer {
+  min-height: 100vh;
+  background-color: #FD0237; 
+ 
+}
 /* Loader */
 
 .loader-wrapper {
