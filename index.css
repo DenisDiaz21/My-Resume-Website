@@ -168,13 +168,9 @@ header.sticky ul li a:hover {
  align-self: flex-start;
  text-align:left;
 }
-
-
-.childBanner2 img {
-  max-width: 100%;
-  z-index: 10;
+.svgWave {
+  background-image: linear-gradient(to bottom,#21D4FD 20%, white 20%);
 }
-
 /* Mid Area */
 .mid {
   min-height: 100vh;
@@ -469,9 +465,6 @@ footer {
    margin-left: 3em;
    align-self:flex-start;
   }
-  .homeContact {
-    
-}
   .landingPage {
 
     flex-direction: column;
@@ -533,17 +526,4 @@ and (max-device-width: 812px) {
   .aboutMeImg {
     margin: 35px 35px;
   }
-}
-
-
-
-
-
-.temp {
-  background-image: linear-gradient(to top, #FD0237 20%, white 20%);
-  min-height: 10vh;
-}
-footer {
-  background-color: #FD0237;
-    min-height: 50vh;
 }
