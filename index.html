@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denis Diaz</title>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/5457b1d73d.js" crossorigin="anonymous"></script>
+
+    <!-- PhotoShop Icon -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     
     <!-- CSS -->
     <link rel="stylesheet" href="/index.css">
@@ -19,18 +25,29 @@
 
     <!-- Orbitron Bold 700 Font: font-family: 'Orbitron', sans-serif; -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+   <!-- Gayathri -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@700&family=Julius+Sans+One&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
         <!-- Nav Bar -->
+    <!-- <div> -->
+        <div class="topLeftD">
             <a href="#" class="headerTitle">Đ</a>
-                
-                <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="/contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
-                </ul>
+        </div>
+
+        <div class="homeContact">      
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="/contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+            </ul>
+        </div>
+    <!-- </div> -->
     </header>
 
     <!-- Main Page-->
@@ -102,14 +119,43 @@
     <div class="projects">
         <h2>Projects</h2>
         <div class="projectsSection">
-        
-            <button class="projectTabLink">1</button>
-            <button class="projectTabLink">2</button>
-            <button class="projectTabLink">3</button>
 
-        <div class="project1 projectContent"><h3>Project 1</h3></div>
-        <div class="project2 projectContent"><h3>Project 2</h3></div>
-        <div class="project3 projectContent"><h3>Project 3</h3></div>
+            <div class="projectsButtons">
+                <button class="projectTabLink">1</button>
+                <button class="projectTabLink">2</button>
+                <button class="projectTabLink">3</button>
+            </div>
+
+            <div class="project1 projectContent">
+                <h3>This Website!</h3>
+
+                <div class="projectsContainer">
+                    <div class="project1Img"><img src='/Project1.png' alt="my first project" class="responsive"></div>
+                    <div class="project1Caption">
+                        <p>This website itself was coded and worked on by me, from scratch!
+                            For this project, I decided to only use the three basic building blocks of the web.
+                            This website is my live portfolio, so it will be 
+                            updated often.
+                        </p>
+                        <p><br>What technologies I used:</p>
+                        <p>- <i class="fab fa-html5 fa-2x project1Icon1"></i> HTML5</p>
+                        <p>- <i class="fab fa-css3-alt fa-2x project1Icon2"></i> CSS3</p>
+                        <p>- <i class="fab fa-js fa-2x project1Icon3"></i> JavaScript</p>
+                        <p>- <span class="iconify" data-icon="file-icons:adobe-photoshop" data-inline="false"></span> PhotoShop</p>
+
+                        <div class="project1Github">Github repo<a href="https://github.com/DenisDiaz21/My-Resume-Website"><i class="fab fa-github fa-3x"></i></a></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="project2 projectContent">
+                <h3>Project 2</h3>
+                <p>Coming Soon!</p>
+            </div>
+            <div class="project3 projectContent">
+                <h3>Project 3</h3>
+                <p>Coming Soon!</p>
+            </div>
 
         </div>
     </div>
@@ -131,8 +177,6 @@
     <script src="RotatingD.js"></script>
     <script src="ArrowGuideDown.js"></script>
     <script src="ProjectTabs.js"></script>
-
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 
 </html>

@@ -36,11 +36,19 @@ header {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     transition: 0.6s;
     padding: 40px 100px;
     z-index: 98;
+}
+.topLeftD {
+  display: flex;
+  justify-content: flex-start;
+}
+.homeContact {
+  display: flex;
+  justify-content: flex-end;
 }
 
  header.sticky {
@@ -51,23 +59,19 @@ header {
 
 header.sticky .headerTitle {
     color: #fff;
-    font-size: 2em;
-    
+    font-size: 2em;    
 }
 header.sticky ul li a {
     color: #fff;
 }
 header .headerTitle {
-    /* position: relative; */
     font-weight: 700;
     color: #000;
     text-decoration: none;
     font-size: 4em;
     text-transform: uppercase;
-    letter-spacing: 2px;
     transition: 0.6s;
     font-family: 'Orbitron', sans-serif;
-
 }
 
 header ul {
@@ -223,9 +227,24 @@ header.sticky ul li a:hover {
   color: #000000;
   align-self: center;
 }
+.projects h3 {
+  font-family: Gayathri;
+  font-size: 3em;
+  color: #000000;
+  align-self: center;
+}
 .projectsSection{
   min-height: 100vh;
   margin-top: 25px;
+}
+.projectsButtons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  transition: 1s;
+
 }
 .projectTabLink {
   outline: none;
@@ -235,6 +254,7 @@ header.sticky ul li a:hover {
   cursor: pointer;
   padding: 25px 40px;
   font-size: 25px;
+  transition: .6s;
 }
 .projectTabLink:hover {
   background-color: #999;
@@ -242,18 +262,61 @@ header.sticky ul li a:hover {
 .projectContent {
   color:black;
   display: none;
-  padding: 100px 25px;
-  height: 100%;
+}
+
+.projectsContainer {
+ display: flex;
+ flex-flow: row nowrap;
+ max-width: 60%;
 }
 
 .project1 {
-  background-color: red;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.project1 h3{
+  margin: 35px 0px;
+}
+.project1Img {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.project1Caption {
+  margin-left: 25px;
+}
+.project1Icon1{
+  color: orange;
+}
+.project1Icon2{
+  color:skyblue;
+}
+.project1Icon3{
+  color: yellow;
+}
+.iconify {
+  width:30px;
+  height:30px;
+  color: blue;
+  margin-top: 5px;
+}
+
+.project1Github {
+display: flex;
+justify-content: flex-end;
+}
+.project1Github i {
+  margin-right: 1em;
 }
 .project2 {
-  background-color: blue;
+ flex-flow: column nowrap;
 }
 .project3 {
-  background-color: yellow;
+  flex-flow: column nowrap;
 }
 
 
@@ -388,6 +451,56 @@ footer {
   {
       overflow-x: hidden; 
   }
+  header {
+    padding: 40px 0px;
+  }
+  header.sticky {
+    padding: 10px 0px;
+  }
+  .headerTitle {
+    display: flex;
+  }
+  .topLeftD {
+   margin-left: 3em;
+   align-self:flex-start;
+  }
+  .homeContact {
+    
+}
+  .landingPage {
+
+    flex-direction: column;
+   
+    height: 80vh;
+    width: 40%;
+
+  }
+
+  .aboutMe {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    align-items: center;
+  }
+
+  .aboutMeSection {
+      display: flex;
+      flex-flow: row wrap-reverse;
+      max-width: 60%;
+  }
+  .aboutMeImg {
+    margin: 35px 35px;
+  }
+}
+
+/* */
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 812px) {
+  
+  html,body
+  {
+      overflow-x: hidden; 
+  }
   .topBanner {
     height: 150vh;
   }
@@ -396,8 +509,8 @@ footer {
 
     flex-direction: column;
    
-    height: 100vh;
-    width: 40%;
+    height: 50%;
+
 
   }
 
@@ -416,4 +529,3 @@ footer {
     margin: 35px 35px;
   }
 }
-
