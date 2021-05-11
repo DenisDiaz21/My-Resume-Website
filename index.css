@@ -22,10 +22,12 @@ vertical-align: baseline;
 * {
     box-sizing: border-box;
     font-family: 'Bebas Neue', cursive;
+
 }
 
 body {
   overflow-x: hidden;
+
 }
 
 /* NAV BAR */
@@ -301,7 +303,7 @@ header.sticky ul li a:hover {
 .iconify {
   width:30px;
   height:30px;
-  color: blue;
+  color: rgb(1, 95, 189);
   margin-top: 5px;
 }
 
@@ -322,10 +324,13 @@ justify-content: flex-end;
 
 /* End of Main Body */
 /* Footer */
+.footerFix {
+  background-image: linear-gradient(to top, #FD0237 20%, white 20%);
+  min-height: 10vh;
+}
 footer {
-  min-height: 100vh;
-  background-color: #FD0237; 
- 
+  background-color: #FD0237;
+    min-height: 50vh;
 }
 /* Loader */
 
@@ -528,4 +533,17 @@ and (max-device-width: 812px) {
   .aboutMeImg {
     margin: 35px 35px;
   }
+}
+
+
+
+
+
+.temp {
+  background-image: linear-gradient(to top, #FD0237 20%, white 20%);
+  min-height: 10vh;
+}
+footer {
+  background-color: #FD0237;
+    min-height: 50vh;
 }
