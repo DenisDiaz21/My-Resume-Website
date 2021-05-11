@@ -175,10 +175,12 @@ header.sticky ul li a:hover {
   display: flex;
   flex-direction: column;
 }
+/* About Me */
 .aboutMe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5em;
 }
 .aboutMe h2 {
   font-family: Righteous;
@@ -209,6 +211,7 @@ header.sticky ul li a:hover {
 
   overflow: hidden;
 }
+/* Projects */
 .projects {
   display: flex;
   flex-direction: column;
@@ -222,7 +225,37 @@ header.sticky ul li a:hover {
 }
 .projectsSection{
   min-height: 100vh;
+  margin-top: 25px;
 }
+.projectTabLink {
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #555;
+  cursor: pointer;
+  padding: 25px 40px;
+  font-size: 25px;
+}
+.projectTabLink:hover {
+  background-color: #999;
+}
+.projectContent {
+  color:black;
+  display: none;
+  padding: 100px 25px;
+  height: 100%;
+}
+
+.project1 {
+  background-color: red;
+}
+.project2 {
+  background-color: blue;
+}
+.project3 {
+  background-color: yellow;
+}
+
 
 /* End of Main Body */
 /* Footer */
@@ -380,7 +413,7 @@ footer {
       max-width: 60%;
   }
   .aboutMeImg {
-    margin: 25px 35px;
+    margin: 35px 35px;
   }
 }
 
