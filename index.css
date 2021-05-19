@@ -193,8 +193,8 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5em;
-  margin-bottom: 10em;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 .aboutMe h2 {
   font-family: Righteous;
@@ -208,7 +208,7 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
   flex-flow: row nowrap;
 }
 .aboutMeBio p {
-  font-size: 25px;
+  font-size: 28px;
   color: #fff;
   font-family: Gayathri;
 }
@@ -256,7 +256,7 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10em;
+  margin-top: 8em;
 }
 .projects h2 {
   font-family: Righteous;
@@ -265,9 +265,9 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
   align-self: center;
 }
 .projects h3 {
-  font-family: Righteous;
-  font-size: 3em;
-  color: #64FFDA;
+  font-family: Gayathri;
+  font-size: 50px;
+  color: #fff;
   align-self: center;
 }
 .projectsSection{
@@ -326,6 +326,7 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
 
 .projectContent {
   display: none;
+  transition: width 2s;
 }
 .projectContent p {
   font-family: Gayathri;
@@ -344,7 +345,7 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
   align-items: center;
 }
 .project1 h3{
-  margin: 35px 0px;
+  margin: 25px 0px;
 }
 .project1Img {
   margin: 48px 0px;
@@ -375,6 +376,8 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
 .project1Github {
 display: flex;
 justify-content: flex-end;
+font-family: Righteous;
+color: #fff;
 }
 .project1Github i {
   margin-right: 1em;
