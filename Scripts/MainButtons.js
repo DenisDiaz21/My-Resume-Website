@@ -7,5 +7,5 @@ resumeButton.onclick = () => {
 let sayHello = document.querySelector(".sayHello");
 
 sayHello.onclick = () => {
-    window.open("mailto:denisdiaz2198@gmail.com")
+    window.open('mailto:denisdiaz2198@gmail.com?subject=Loved your site!');
 }
