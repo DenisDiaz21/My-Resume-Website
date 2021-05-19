@@ -14,8 +14,11 @@ projectContent.forEach((e,i) => {
 // Onclick function to display designated project
 button1.onclick = () =>{
     project1.style.display = 'flex';
+    project1.style.width = '100%';
+    project1.style.transition = 'width 2s'
     project2.style.display = 'none';
     project3.style.display = 'none';
+
 }
 button2.onclick = () =>{
     project1.style.display = 'none';
