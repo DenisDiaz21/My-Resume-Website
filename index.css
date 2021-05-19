@@ -55,7 +55,7 @@ header {
 
  header.sticky {
     padding: 10px 100px;
-    background: rgba(1, 1, 93, 0.685);
+    
     transition: 0.6s;
 }
 
@@ -68,7 +68,7 @@ header.sticky ul li a {
 }
 header .headerTitle {
     font-weight: 700;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-size: 4em;
     text-transform: uppercase;
@@ -92,7 +92,7 @@ header ul li a {
     /* position: relative; */
     margin: 0 15px;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.6s;
@@ -100,7 +100,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-    color: #fff;
+    color: #4E4E50;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
@@ -108,7 +108,7 @@ header ul li a:hover {
 }
 
 header.sticky ul li a:hover {
-    color: #000;
+    color: #4E4E50;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
@@ -116,10 +116,15 @@ header.sticky ul li a:hover {
 }
 /*End of Nav Bar*/
 
+/* Side Bar */
+
 /* Main Body */
+main {
+padding: 0px 100px;
+background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+}
 .topBanner {
-    height: 90vh;
-    background-color: #21D4FD;
+    height: 100vh;
    
     display: flex;
     flex-direction: column;
@@ -155,8 +160,8 @@ header.sticky ul li a:hover {
 
 .childBanner1 h1 {
   font-family: Righteous;
-  font-size: 5em;
-  color: #000000;
+  font-size: 120px;
+  color: #C3073F;
 
   display: flex;
   align-self: flex-start;
@@ -167,6 +172,12 @@ header.sticky ul li a:hover {
  display: flex;
  align-self: flex-start;
  text-align:left;
+ color: #fff;
+}
+.childBanner1Nested h2 {
+  font-size: 60px;
+  color: #4E4E50;
+
 }
 .svgWave {
   background-image: linear-gradient(to bottom,#21D4FD 20%, white 20%);
@@ -182,28 +193,34 @@ header.sticky ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5em;
+  margin-top: 5em;
+  margin-bottom: 10em;
 }
 .aboutMe h2 {
   font-family: Righteous;
   font-size: 5em;
-  color: #000000;
+  color: #C3073F;
   align-self: center;
+  margin: 1em 1em;
 }
-.aboutMeSection{
+.aboutMeSection {
   display: flex;
   flex-flow: row nowrap;
-  max-width: 60%;
 }
-.aboutMeBio {
-  display: flex;
+.aboutMeBio p {
+  font-size: 25px;
+  color: #fff;
+  font-family: Gayathri;
 }
-.aboutMeImg {
-  display: inline-block;
-  position: relative;
+.aboutMeBio li {
+  font-size: 25px;
+  color: #fff;
+  font-family: Gayathri;
+}
 
+.aboutMeImg {
   margin: 0px 35px;
-  width: 300px;
+  width: 310px;
   height: 520px;
   background:#fff;
   border: solid black;
@@ -217,6 +234,7 @@ header.sticky ul li a:hover {
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
 }
+
 
 @keyframes float {
 	0% {
@@ -238,17 +256,18 @@ header.sticky ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10em;
 }
 .projects h2 {
   font-family: Righteous;
   font-size: 5em;
-  color: #000000;
+  color: #C3073F;
   align-self: center;
 }
 .projects h3 {
-  font-family: Gayathri;
+  font-family: Righteous;
   font-size: 3em;
-  color: #000000;
+  color: #64FFDA;
   align-self: center;
 }
 .projectsSection{
@@ -258,28 +277,60 @@ header.sticky ul li a:hover {
 .projectsButtons {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
   transition: 1s;
 
 }
-.projectTabLink {
-  outline: none;
-  border: none;
-  color: white;
-  background-color: #555;
+
+.projectTabLink{
+  padding: 15px 100px;
+  margin:10px 4px;
+  color: #111;
+  font-family: Righteous;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display:inline-block;
   cursor: pointer;
-  padding: 25px 40px;
-  font-size: 25px;
-  transition: .6s;
 }
-.projectTabLink:hover {
-  background-color: #999;
+
+.projectTabLink::before {
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  left: 0px;
+  width: 100%;
+  height: 3px;
+  background: black;
+  display: block;
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+  transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
 }
+.projectTabLink:hover::before {
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1)
+}
+
 .projectContent {
-  color:black;
   display: none;
+}
+.projectContent p {
+  font-family: Gayathri;
+  color: #8892B0;
+  font-size: 20px;
 }
 
 .projectsContainer {
@@ -296,9 +347,7 @@ header.sticky ul li a:hover {
   margin: 35px 0px;
 }
 .project1Img {
-  display: flex;
-  width: auto;
-  height: auto;
+  margin: 48px 0px;
 }
 .responsive {
   width: 100%;
@@ -340,12 +389,7 @@ justify-content: flex-end;
 
 /* End of Main Body */
 /* Footer */
-.footerFix {
-  background-image: linear-gradient(to top, #FD0237 20%, white 20%);
-  min-height: 10vh;
-}
 footer {
-  background-color: #FD0237;
     min-height: 50vh;
 }
 /* Loader */
@@ -425,15 +469,15 @@ footer {
  .arrow { 
   transform: translate(-50%,-50%);
   position: absolute;
-  bottom: 1.1em;
+  bottom: 1em;
   visibility: hidden;
 }
 .arrow span {
   display: block;
   width: 30px;
   height: 30px;
-  border-bottom: 5px solid black;
-  border-right: 5px solid black;
+  border-bottom: 5px solid #C3073F;
+  border-right: 5px solid #C3073F;
   transform: rotate(45deg);
   margin: -8px;
   animation: arrowDown 2s infinite;
@@ -472,6 +516,7 @@ footer {
   {
       overflow-x: hidden; 
   }
+  /* Header */
   header {
     padding: 40px 0px;
   }
@@ -482,18 +527,48 @@ footer {
     display: flex;
   }
   .topLeftD {
-   margin-left: 3em;
+   margin-left: 2em;
    align-self:flex-start;
   }
-  .landingPage {
 
-    flex-direction: column;
+  /* Landing Content */
+  main {
+    padding: 0px 25px;
+
+  }
+  .topBanner {
+    /* height: 90vh;
+    background-color: #21D4FD;
    
-    height: 80vh;
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+    height: 110vh;
+    width: auto;
+  }
+  .landingPage {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    max-width: 60%; */
+  max-width: 100%;
+  flex-direction: column;
 
   }
 
+  .childBanner1 p {
+    font-size: 18px;
+  }
+  .childBanner1 h1 {
+    font-size: 40px;
+  }
+  
+
+  /* About ME Section */
   .aboutMe {
     display: flex;
     flex-flow: row wrap-reverse;
@@ -519,17 +594,10 @@ and (max-device-width: 812px) {
   {
       overflow-x: hidden; 
   }
-  .topBanner {
-    height: 150vh;
-  }
+ 
 
   .landingPage {
-
     flex-direction: column;
-   
-    height: 50%;
-
-
   }
 
   .aboutMe {
