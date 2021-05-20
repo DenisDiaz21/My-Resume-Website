@@ -52,6 +52,12 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+.home {
+  display: none;
+}
+.contact {
+  display: none;
+}
 
  header.sticky {
     padding: 10px 100px;
@@ -74,6 +80,7 @@ header .headerTitle {
     text-transform: uppercase;
     transition: 0.6s;
     font-family: 'Orbitron', sans-serif;
+    display: none;
 }
 
 header ul {
@@ -199,10 +206,8 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
     font-weight: 500;
     color: rgba(255, 255, 255, 0.822);
     text-align: center;
-
     display: flex;
     align-self: flex-start;
-
 }
 
 .childBanner1 h1 {
@@ -215,8 +220,9 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
 }
 
 .childBanner1Nested p {
+  display: none;
  font-size: 1.7em;
- display: flex;
+
  align-self: flex-start;
  text-align:left;
  color: #fff;
@@ -224,11 +230,26 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
 .childBanner1Nested h2 {
   font-size: 60px;
   color: #4E4E50;
+}
+.childBanner1Heading {
+  visibility: hidden;
+}
+.childBanner1Name {
+  visibility: hidden;
+}
+.iDevelop {
+  visibility: hidden;
+}
+.smallBio {
+  display: none;
+}
+.resumeButton2ElectricBoogaloo {
+  visibility: hidden;
+}
+.sayHello2TokyoDrift {
+  visibility: hidden;
+}
 
-}
-.svgWave {
-  background-image: linear-gradient(to bottom,#21D4FD 20%, white 20%);
-}
 /* Mid Area */
 .mid {
   min-height: 100vh;
@@ -402,6 +423,30 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
   100% {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes zoom-in {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  
+  100% {
+    opacity:1;
+    transform: scale(1);
   }
 }
 
