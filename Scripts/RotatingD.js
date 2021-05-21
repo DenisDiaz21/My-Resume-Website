@@ -5,7 +5,7 @@ let loader = document.querySelector(".loader-wrapper");
 function RemoveD() {
     setTimeout(() => {
     loader.parentElement.removeChild(loader);
-}, 4000);}
+}, 5000);}
 RemoveD();
 
 // Disable scroll
