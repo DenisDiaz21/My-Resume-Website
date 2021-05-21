@@ -124,6 +124,32 @@ header.sticky ul li a:hover {
 /*End of Nav Bar*/
 
 /* Side Bar */
+.stickySidebar {
+  position: fixed;
+  top: 80%;
+  left: 3%;
+  visibility: hidden;
+}
+.stickySidebar ul {
+  color:white;
+  font-size: 30px;
+  list-style-type: none;
+}
+.stickySidebar ul li a {
+  color: #fff;
+}
+.stickySidebar ul li a:visited {
+  color: #4E4E50;
+}
+.stickySidebar ul li a:visited:hover {
+  color: #fff;
+  transition: .4s;
+}
+
+.stickySidebar ul li a:hover {
+  color:#4E4E50;
+  transition: .4s;
+}
 
 /* Main Body */
 main {
@@ -510,7 +536,7 @@ footer {
     top: 0;
     left: 0;
     /* background-color: #242F3F; */
-    background-color: #FD0237;
+    background-color: #C3073F;
     z-index: 99;
   
     display: flex;
@@ -568,9 +594,10 @@ footer {
    25% {
      opacity: 1;
    }
-   90% {
+   100% {
      opacity: 0;
    }
+
  }
 
  /* Arrow Pointing Down */
