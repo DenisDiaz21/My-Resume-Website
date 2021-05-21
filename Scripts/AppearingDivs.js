@@ -7,53 +7,58 @@ let iDevelop = document.querySelector(".iDevelop");
 let smallBio = document.querySelector(".smallBio");
 let landingPageButtons = document.querySelector(".landingPageButtons");
 let resumeButton2ElectricBoogaloo = document.querySelector(".resumeButton2ElectricBoogaloo");
-let sayHello2TokyoDrift = document.querySelector(".sayHello2TokyoDrift")
+let sayHello2TokyoDrift = document.querySelector(".sayHello2TokyoDrift");
+let stickySidebar = document.querySelector(".stickySidebar");
 
 
 setTimeout(() => {
     home.style.display = 'flex';
     home.style.animation = 'fade-in 1s';
-}, 4200);
+}, 4000);
 
 setTimeout(() => {
     contact.style.display = 'flex';
     contact.style.animation = 'fade-in 1s';
-}, 4300);
+}, 4100);
 
 setTimeout(() => {
     bigD.style.display = 'flex';
-    bigD.style.animation = 'zoom-in 1s';
-}, 4200);
+    bigD.style.animation = 'zoom-in .4s';
+}, 4400);
 
 setTimeout(() => {
     childBanner1Heading.style.visibility = 'visible';
     childBanner1Heading.style.animation = 'fade-up 1s';
-}, 4400);
+}, 4200);
 
 setTimeout(() => {
     childBanner1Name.style.visibility = 'visible';
     childBanner1Name.style.animation = 'fade-up 1s';
-}, 4550);
+}, 4350);
 
 setTimeout(() => {
     iDevelop.style.visibility = 'visible';
     iDevelop.style.animation = 'fade-up 1s';
-}, 4700);
+}, 4500);
 
 setTimeout(() => {
     smallBio.style.display = 'flex';
     smallBio.style.animation = 'fade-up 1s';
-}, 4850);
+}, 4650);
 
 setTimeout(() => {
     resumeButton2ElectricBoogaloo.style.visibility = 'visible';
     resumeButton2ElectricBoogaloo.style.animation = 'fade-up 1s';
-}, 5000);
+}, 4800);
 
 setTimeout(() => {
     sayHello2TokyoDrift.style.visibility = 'visible';
     sayHello2TokyoDrift.style.animation = 'fade-up 1s';
-}, 5150);
+}, 4950);
 
+setTimeout(() => {
+    stickySidebar.style.visibility = 'visible';
+    stickySidebar.style.animation = 'zoom-in .4s';
+}, 5800);
 
 
