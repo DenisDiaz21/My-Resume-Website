@@ -7,7 +7,7 @@ setTimeout(() =>
             {
             arrow.style.visibility = "visible";
             }
-        }, 5000);
+        }, 6000);
 
 // On scroll, force hidden
 window.addEventListener("scroll", () => 
