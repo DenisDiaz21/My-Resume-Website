@@ -42,7 +42,7 @@ setTimeout(() => {
 }, 4500);
 
 setTimeout(() => {
-    smallBio.style.display = 'flex';
+    smallBio.style.visibility = 'visible';
     smallBio.style.animation = 'fade-up 1s';
 }, 4650);
 

@@ -22,7 +22,6 @@ vertical-align: baseline;
 * {
     box-sizing: border-box;
     font-family: 'Bebas Neue', cursive;
-
 }
 
 body {
@@ -157,24 +156,23 @@ padding: 0px 100px;
 background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
 }
 .topBanner {
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    
+}
+.landingPage {
+  height: 100vh;
    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
-.landingPage {
-  
-  display: flex;
-  flex-flow: column nowrap;
-  max-width: 70%;
-
-}
-
-.landingPage button {
+.landingPageButtons button {
   margin: 25px;
   padding: 25px 50px;
 
@@ -186,11 +184,10 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
   text-decoration: none;
   display:inline-block;
   cursor: pointer;
-
 }
 
 
-.landingPage button::before {
+.landingPageButtons button::before {
   content: '';
   position: absolute;
   bottom: 0%;
@@ -208,7 +205,7 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
   -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
   transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
 }
-.landingPage button:hover::before {
+.landingPageButtons button:hover::before {
   -webkit-transform-origin: left top;
   -ms-transform-origin: left top;
   transform-origin: left top;
@@ -267,7 +264,7 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
   visibility: hidden;
 }
 .smallBio {
-  display: none;
+  visibility: hidden;
 }
 .resumeButton2ElectricBoogaloo {
   visibility: hidden;
@@ -673,15 +670,6 @@ footer {
 
   }
   .topBanner {
-    /* height: 90vh;
-    background-color: #21D4FD;
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-
-    height: 110vh;
     width: auto;
   }
 
@@ -719,10 +707,9 @@ footer {
 /* */
 @media only screen
 and (min-device-width: 320px) 
-and (max-device-width: 812px) {
+and (max-device-width: 897px) {
   
-  html,body
-  {
+  html,body {
       overflow-x: hidden; 
   }
  
@@ -730,6 +717,29 @@ and (max-device-width: 812px) {
   .landingPage {
     flex-direction: column;
   }
+ 
+  .childBanner1 p {
+    font-size: 1.9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.childBanner1 h1 {
+  font-family: Righteous;
+  font-size: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.childBanner1Nested h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #4E4E50;
+}
 
   .aboutMe {
     display: flex;
@@ -746,3 +756,4 @@ and (max-device-width: 812px) {
     margin: 35px 35px;
   }
 }
+
