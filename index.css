@@ -296,7 +296,9 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
 }
 .aboutMeSection {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column-reverse wrap;
+  justify-content: center;
+  align-items: center;
 }
 .aboutMeBio p {
   font-size: 28px;
@@ -361,10 +363,6 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
   color: #fff;
   align-self: center;
 }
-.projectsSection{
-  min-height: 100vh;
-  margin-top: 25px;
-}
 .projectsButtons {
   display: flex;
   flex-flow: row wrap;
@@ -423,16 +421,17 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
   color: #8892B0;
   font-size: 20px;
 }
-
 .projectsContainer {
- display: flex;
- flex-flow: row nowrap;
- max-width: 60%;
-}
-
-.project1 {
-  flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+}
+.project1 {
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes fade-in {
@@ -476,13 +475,7 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
 .project1 h3{
   margin: 25px 0px;
 }
-.project1Img {
-  margin: 48px 0px;
-}
-.responsive {
-  width: 100%;
-  height: auto;
-}
+
 .project1Caption {
   margin-left: 25px;
 }
@@ -637,74 +630,6 @@ footer {
 
 
 /* Media Queries  */
-
- /* Modern iPhone: Portrait*/
- @media only screen 
- and (min-device-width: 375px) 
- and (max-device-width: 812px) 
- and (-webkit-min-device-pixel-ratio: 3)
- and (orientation: portrait) {
-
-  html,body
-  {
-      overflow-x: hidden; 
-  }
-  /* Header */
-  header {
-    padding: 40px 0px;
-  }
-  header.sticky {
-    padding: 10px 0px;
-  }
-  .headerTitle {
-    display: flex;
-  }
-  .topLeftD {
-   margin-left: 2em;
-   align-self:flex-start;
-  }
-
-  /* Landing Content */
-  main {
-    padding: 0px 25px;
-
-  }
-  .topBanner {
-    width: auto;
-  }
-
-  .landingPage {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  }
-
-  .childBanner1 p {
-    font-size: 18px;
-  }
-  .childBanner1 h1 {
-    font-size: 40px;
-  }
-  
-
-  /* About ME Section */
-  .aboutMe {
-    display: flex;
-    flex-flow: row wrap-reverse;
-    align-items: center;
-  }
-
-  .aboutMeSection {
-      display: flex;
-      flex-flow: row wrap-reverse;
-      max-width: 60%;
-  }
-  .aboutMeImg {
-    margin: 35px 35px;
-  }
-}
-
-/* */
 @media only screen
 and (min-device-width: 320px) 
 and (max-device-width: 897px) {
@@ -712,10 +637,16 @@ and (max-device-width: 897px) {
   html,body {
       overflow-x: hidden; 
   }
- 
-
+  header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 98;
+  }
   .landingPage {
-    flex-direction: column;
+    display: flex;
   }
  
   .childBanner1 p {
@@ -724,7 +655,7 @@ and (max-device-width: 897px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center; 
 }
 .childBanner1 h1 {
   font-family: Righteous;
@@ -741,19 +672,34 @@ and (max-device-width: 897px) {
   color: #4E4E50;
 }
 
-  .aboutMe {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+  .aboutMe h2 {
+    text-align: center;
+    margin: 0.5em 0.5em;
   }
 
   .aboutMeSection {
       display: flex;
-      flex-flow: row wrap;
-      max-width: 60%;
+      flex-flow: column-reverse wrap;
   }
   .aboutMeImg {
     margin: 35px 35px;
   }
+  .aboutMeBio {
+    margin: 0px 65px;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+ .projectsContainer{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+ }
+
 }
 
